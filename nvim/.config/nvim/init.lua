@@ -34,7 +34,7 @@ vim.o.undodir = vim.fn.stdpath("data") .. "/undo"
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
-vim.o.termguicolor = true
+vim.opt.termguicolors = true
 vim.o.signcolumn = 'yes'
 
 vim.o.updatetime = 250
