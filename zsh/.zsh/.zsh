@@ -1,0 +1,1 @@
+/home/echatela/dotfiles/zsh/.zsh

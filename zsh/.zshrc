@@ -3,6 +3,8 @@ fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # --- History ---
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -30,9 +32,6 @@ alias la='eza -la'
 alias lt='eza --tree'
 alias monitor='./.config/hypr/scripts/monitor-setup.sh'
 
-# --- Zoxide ---
-eval "$(zoxide init zsh)"
-
 # --- Plugins ---
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
